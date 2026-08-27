@@ -1,0 +1,29 @@
+@reference "../../index.css";
+.menu-page-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.menu-sidebar-wrapper {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.menu-header-badge {
+  @apply inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-200;
+}
+
+.border-dashed-custom {
+  border: 2px dashed #dee2e6 !important;
+  background-color: #fafafa;
+}

@@ -1,0 +1,71 @@
+
+.mutfak-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.mutfak-sidebar-wrapper {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.mutfak-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+.mutfak-card {
+  background-color: #fafafa;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mutfak-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.mutfak-card-header {
+  background: linear-gradient(135deg, #198754, #146c43);
+  color: #ffffff;
+  padding: 12px 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+
+.mutfak-item {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.mutfak-item-adet {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+}
+
+.mutfak-not-badge {
+  background-color: #fff3cd;
+  color: #664d03;
+  border: 1px solid #ffecb5;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  display: inline-block;
+}

@@ -1,0 +1,18 @@
+
+.qr-mobile-wrapper {
+  max-width: 430px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

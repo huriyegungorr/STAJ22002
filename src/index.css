@@ -1,0 +1,111 @@
+@import "tailwindcss";
+body {
+  background-color: #f8f9fa;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-right: 1px solid #dee2e6;
+  z-index: 1000;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.top-header {
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+}
+* {
+  -webkit-tap-highlight-color: transparent; 
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
+.pos-card-touch {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+
+.pos-card-touch:active {
+  transform: scale(0.96) !important;
+}
+
+
+.border-left-dolu {
+  border-left: 6px solid #ffc107 !important;
+}
+
+.border-left-bos {
+  border-left: 6px solid #198754 !important;
+}
+
+.border-left-rezerve {
+  border-left: 6px solid #0d6efd !important;
+}
+
+
+.status-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-pulse.dolu {
+  background-color: #ffc107;
+  box-shadow: 0 0 8px #ffc107;
+}
+
+.status-pulse.bos {
+  background-color: #198754;
+  box-shadow: 0 0 8px #198754;
+}
+.product-card:active {
+  transform: scale(0.97);
+}
+
+@media (min-width: 992px) {
+ 
+  .kategori-sidebar {
+    width: 220px !important;
+    min-width: 220px !important;
+    height: 100%;
+  }
+}

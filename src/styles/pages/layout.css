@@ -1,0 +1,49 @@
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+  width: 260px;
+  min-width: 260px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #dee2e6;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; /* Flex elemanının taşmasını engeller */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 992px altındaki küçük ekranlar */
+@media (max-width: 991.98px) {
+  .sidebar-wrapper {
+    display: none !important;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+  }
+
+  .sidebar-drawer {
+    width: 280px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
